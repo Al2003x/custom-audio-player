@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Custom Audio Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="player">
+        <h1 class="player__title">My custom audio player</h1>
+        <div class="player__picture">
+          <img
+            src="./assets/img/img1.jpg"
+            alt="1100"
+            class="player__picture-img"
+          />
+        </div>
+        <h3 class="song-name">1100</h3>
+        <div class="player__progress-container">
+          <!-- <div class="player__progress"></div> -->
+          <input type="range" min="0" step="1" value="0" class="player__progress-input">
+        </div>
+        <div class="player__time">
+          <div class="current">00:00</div>
+          <div class="duraction"></div>
+        </div>
+        <audio class="player__audio" src="./assets/audio/1100.mp3"></audio>
+        <div class="player__controls">
+          <button class="btn btn__prev">
+            <img class="btn__img" src="./assets/svg/backward-arrow.svg" alt="backward-arrow">
+          </button>
+          <button class="btn btn__play">
+            <img class="btn__img btn__img-play" src="./assets/svg/play.svg" alt="play">
+          </button>
+          <button class="btn btn__next">
+            <img class="btn__img" src="./assets/svg/forward-arrow.svg" alt="forward-arrow">
+          </button>
+        </div>
+        <!-- <div class="play__volume">
+          <input
+            type="range"
+            class="play__volume"
+            min="0"
+            max="100"
+            value="50"
+          />
+        </div> -->
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <a class="footer__link" href="https://github.com/Al2003x">
+          <img
+            class="footer__img-git"
+            src="./assets/svg/github-icon.svg"
+            alt="github"
+          />
+        </a>
+        <p class="footer__year">2022</p>
+        <a class="footer__link" href="https://rs.school/js-stage0/"
+          ><img
+            class="footer__img-rss"
+            src="./assets/svg/rsschool-icon.svg"
+            alt="rsschool"
+          />
+        </a>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
